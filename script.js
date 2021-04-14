@@ -7,12 +7,13 @@ snake[0] ={
     y: 8 * box
 }
 
-
+//Cria o backgroun
 function criarBG(){
     context.fillStyle = "lightgreen";
     context.fillRect(0, 0, 16*box, 16*box); //desenha o retângulo usando x e y e a largura e altura setadas
 }
 
+//Cria a corbrinha
 function criarCobrinha (){
     for(i = 0; i < snake.length; i++){
         context.fillStyle = "green";
